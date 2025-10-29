@@ -1,0 +1,46 @@
+general.import = [
+  "~/.config/alacritty/theme.toml"
+]
+
+[font]
+size = 16
+builtin_box_drawing = false
+
+[font.normal]
+family = "MesloLGM Nerd Font Propo"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGM Nerd Font Propo" 
+style = "Bold"
+
+[font.italic]
+family = "MesloLGM Nerd Font Propo"
+style = "Italic"
+
+[font.bold_italic]
+family = "MesloLGM Nerd Font Propo"
+style = "Bold Italic"
+
+[[hints.enabled]]
+regex = "[^ ]+\\.rs:\\d+:\\d+"
+command = { program = "code", args = [ "--goto" ] }
+mouse = { enabled = true }
+
+[window]
+padding = {x = 10, y = 10}
+dynamic_padding = true
+decorations = "buttonless"                       # Only works in macos
+startup_mode = "Maximized"
+# opacity = 1
+
+[mouse]
+hide_when_typing = false
+
+[cursor]
+style = { shape = "Block", blinking = "Never" }   # block cursor, no blinking
+vi_mode_style = "Block"                           # use block for vi mode too
+blink_interval = 750
+blink_timeout = 0                                 # never stop blinking (optional)
+unfocused_hollow = false                          # solid block when unfocused
+thickness = 1.0                                   # full width of the cell
