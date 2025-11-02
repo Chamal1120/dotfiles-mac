@@ -1,7 +1,8 @@
 <div align="center">
 
 # Chamal1120's OSX Dotfiles
-Trying replicate my linux setup.
+
+_Tryna replicate my linux setup_
 
 </div>
 
