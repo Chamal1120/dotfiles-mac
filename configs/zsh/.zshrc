@@ -26,12 +26,13 @@ fi
 # =========================
 export PATH="$HOME/.local/bin:$PATH"
 export MANPATH="$HOME/.local/man:$MANPATH"
+export PATH="$HOME/.npm-global/bin:$PATH"
 export EDITOR='nvim'
 export VISUAL='nvim'
-export BROWSER='chrome'
+#export BROWSER='chrome'
 export PATH="$HOME/.cargo/bin:$HOME/.bun/bin:$PATH"
 export ANDROID_HOME="$HOME/Android/Sdk"
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk # Replace 21 with the installed version
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk11/Contents/Home
 export PATH=$JAVA_HOME/bin:$PATH
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export FLASK_DEBUG=1

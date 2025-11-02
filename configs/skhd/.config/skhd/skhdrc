@@ -1,0 +1,56 @@
+# Chaning Window Focus
+
+# change window focus within space
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+alt - h : yabai -m window --focus west 
+alt - l : yabai -m window --focus east 
+
+# Modifying the current layout
+
+# swap window position and size with window in direction of focused window
+#   (options: north, east, south, west)
+alt + shift - k : yabai -m window --swap north
+alt + shift - j : yabai -m window --swap south
+alt + shift - l : yabai -m window --swap east
+alt + shift - h : yabai -m window --swap west
+
+# Move focused window to spaces
+# alt + shift - 1: yabai -m window --space 1
+# alt + shift - 2: yabai -m window --space 2
+# alt + shift - 3: yabai -m window --space 3
+# alt + shift - 4: yabai -m window --space 4
+# alt + shift - 5: yabai -m window --space 5
+# alt + shift - 6: yabai -m window --space 6
+
+# Move focused window to space and follow
+lalt + shift - 1: yabai -m window --space 1 --focus
+alt + shift - 2 : yabai -m window --space 2 --focus
+alt + shift - 3 : yabai -m window --space 3 --focus
+alt + shift - 4 : yabai -m window --space 4 --focus
+alt + shift - 5 : yabai -m window --space 5 --focus
+alt + shift - 6 : yabai -m window --space 6 --focus
+
+# maximise a window
+alt + shift - m :yabai -m  window --toggle zoom-fullscreen
+
+# swap with previously focused window
+# alt + shift yabai -m window --swap recent
+
+# swap with previous or next window in window tree (options: prev, next)
+# yabai -m window --swap prev
+
+# swap with first or last window in window tree (options: first, last)
+# yabai -m window --swap first
+
+# swap with window under cursor
+# yabai -m window --swap mouse
+
+# rotate the layout clockwise
+# shift + alt - r : yabai -m space --rotate 270
+
+# flip along the y axis
+# shift + alt - y : yabai -m space --minor y-axis
+
+# flip along the x axis
+# shift + alt - x : yabai -m space --minor x-axis

@@ -8,7 +8,10 @@ return {
       -- You can customize some of the format options for the filetype (:help conform.format)
       rust = { "rustfmt", lsp_format = "fallback" },
       -- Conform will run the first available formatter
-      javascript = { "prettierd", "prettier", stop_after_first = true },
+      javascript = { "prettier", stop_after_first = true },
+      typescript = { "prettier", stop_after_first = true },
+      javascriptreact = { "prettier", stop_after_first = true },
+      typescriptreact = { "prettier", stop_after_first = true },
     },
   },
   config = function(_, opts)
@@ -16,7 +19,7 @@ return {
 
     -- Format with leader key
     vim.keymap.set("n", "<leader>gf", function()
-      require("conform").format()
+      require("conform").format({ async = true, lsp_fallback = true })
     end, { desc = "Format code with Conform" })
   end,
 }
