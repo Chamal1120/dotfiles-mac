@@ -32,4 +32,4 @@ stow --target=$HOME <enter the configs you need seperated with spaces>
 You can simply delete the symlinks or use Stow to remove them as a batch.
 
 ## LICENSE
-Lincesed under [_do what the fuck you want to public license_](./LICENSE).
+Lincensed under [_do what the fuck you want to public license_](./LICENSE).
