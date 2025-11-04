@@ -71,15 +71,15 @@ vim.api.nvim_create_user_command("Tms", function()
   }, { detach = true })
 end, {})
 
-
-vim.api.nvim_create_user_command("Gropen", function()
-	vim.fn.jobstart({ "bash", "-c", "gropen" }, { detach = true })
-	vim.api.nvim_echo({ { "remote repo opened in default browser!", "Normal" } }, false, {})
+-- Custom func for gtr
+vim.api.nvim_create_user_command("Gtr", function()
+	vim.fn.jobstart({ "bash", "-c", "gtr" }, { detach = true })
+	vim.api.nvim_echo({ { "remote opened in the default browser!", "Normal" } }, false, {})
 end, {})
 
 -- Keymaps for custom nvim commands
 vim.keymap.set("n", "<C-f>", ":Tms<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-g>", ":Gropen<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-g>", ":Gtr<CR>", { noremap = true, silent = true })
 
 -- Navigate vim panes better
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")

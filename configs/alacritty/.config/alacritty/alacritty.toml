@@ -1,5 +1,5 @@
 [font]
-size = 16
+size = 14
 builtin_box_drawing = false
 
 [font.normal]
@@ -37,9 +37,9 @@ hide_when_typing = false
 style = { shape = "Block", blinking = "Never" }   # block cursor, no blinking
 vi_mode_style = "Block"                           # use block for vi mode too
 blink_interval = 750
-blink_timeout = 0                                 # never stop blinking (optional)
+blink_timeout = 0                                 # never stop blinking
 unfocused_hollow = false                          # solid block when unfocused
 thickness = 1.0                                   # full width of the cell
 
 [general]
-import = ["bloodmoon.toml"]
+import = ["vague.toml"]

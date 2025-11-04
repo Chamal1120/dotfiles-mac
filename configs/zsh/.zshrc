@@ -65,11 +65,11 @@ case ":$PATH:" in
 esac
 
 # FZF customization
-export FZF_DEFAULT_OPTS=" --preview 'bat -n --color=always {}' \
+export FZF_DEFAULT_OPTS="--preview 'bat -n --color=always {}' \
 --bind=down:preview-down --bind=up:preview-up \
---color=bg+:-1,bg:-1,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+--color=fg:#cdcdcd,bg:#141415,hl:#f3be7c,fg+:#aeaed1,bg+:#252530,hl+:#f3be7c,\
+border:#606079,header:#6e94b2,gutter:#141415,spinner:#7fa563,info:#f3be7c,\
+pointer:#aeaed1,marker:#d8647e,prompt:#bb9dbd"
 
 # ghcup environment (uncomment if haskell toolchain was installed with ghcup)
 #[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
@@ -131,7 +131,7 @@ source <(fzf --zsh)
 # 7. Custom keybinds
 # =========================
 bindkey -s '^f' 'tsesh\n'
-bindkey -s '^g' 'gropen\n'
+bindkey -s '^g' 'gtr\n'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
