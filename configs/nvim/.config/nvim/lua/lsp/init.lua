@@ -27,6 +27,10 @@ local servers = {
     cmd = { "vscode-html-language-server", "--stdio" },
     filetypes = { "html" },
   },
+  cssls = {
+    cmd = { "vscode-css-language-server", "--stdio" },
+    filetypes = { "css" },
+  },
   tailwindcss = {
     cmd = { "tailwindcss-language-server", "--stdio" },
     filetypes = { "html", "razor", "tsx", "jsx" },
