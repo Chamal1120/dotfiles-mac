@@ -3,6 +3,7 @@ return {
   opts = {
     formatters_by_ft = {
       lua = { "stylua" },
+      go = {"goimports", "gofump"},
       -- Conform will run multiple formatters sequentially
       python = { "isort", "black" },
       -- You can customize some of the format options for the filetype (:help conform.format)
@@ -12,6 +13,8 @@ return {
       typescript = { "prettier", stop_after_first = true },
       javascriptreact = { "prettier", stop_after_first = true },
       typescriptreact = { "prettier", stop_after_first = true },
+      java = { "google_java_format", lsp_format = "fallback" },
+      xml = { "xmlformat" },
     },
   },
   config = function(_, opts)

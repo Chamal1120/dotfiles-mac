@@ -11,6 +11,10 @@ local servers = {
     cmd = { "typescript-language-server", "--stdio" },
     filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
   },
+  gopls = {
+    cmd = { "gopls" },
+    filetypes = {"go"},
+  },
   lua_ls = {
     cmd = { "lua-language-server" },
     filetypes = { "lua" },
@@ -33,7 +37,14 @@ local servers = {
   },
   tailwindcss = {
     cmd = { "tailwindcss-language-server", "--stdio" },
-    filetypes = { "html", "razor", "tsx", "jsx" },
+    filetypes = {
+      "html",
+      "razor",
+      "typescriptreact",
+      "typescript",
+      "javascript",
+      "javascriptreact",
+    },
   },
   rust_analyzer = {
     cmd = { "rust-analyzer" },

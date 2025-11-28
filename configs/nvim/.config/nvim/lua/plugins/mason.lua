@@ -26,9 +26,9 @@ return {
           "rust_analyzer",
           "clangd",
           "pylsp",
+          "gopls",
         },
       })
     end,
   },
 }
-
