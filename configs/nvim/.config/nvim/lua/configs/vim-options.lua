@@ -62,9 +62,6 @@ vim.opt.scrolloff = 10
 -- vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- Custom nvim commands
---vim.api.nvim_create_user_command("Tms", function()
---	vim.fn.jobstart({"bash", "-c", "tmux new-window tsesh" }, { detach = true })
---end, {})
 vim.api.nvim_create_user_command("Tms", function()
   vim.fn.jobstart({
     "tmux", "new-window", "-n", "tsesh", "bash", "-c", "~/.local/scripts/tsesh"

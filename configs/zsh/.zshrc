@@ -46,9 +46,8 @@ export MOZ_ENABLE_WAYLAND=1
 export GVIM_ENABLE_WAYLAND=1
 export ELECTRON_ENABLE_WAYLAND=1
 export ELECTRON_OZONE_PLATFORM_HINT=auto
-export BAT_THEME="Catppuccin Mocha"
 export BAT_CONFIG_PATH="$HOME/.config/bat/config/bat.conf"
-export STARSHIP_CONFIG="$HOME/.config/starship.toml"
+export BAT_THEME="base16"
 export COLORTERM=truecolor
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 export NODE_REPL_MODE=sloppy
@@ -93,12 +92,9 @@ alias ll='eza -l'
 alias lt='eza -TL 2'
 alias vim='nvim'
 alias cat='bat'
-#alias man='batman'
 alias yt-dlp-fhd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp.conf'
 alias yt-dlp-hd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-720.conf'
 alias yt-dlp-audio='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-audio.conf'
-# alias ctltui='systemctl-tui'
-# alias kblit='set_kb_backlight'
 # alias myed="ed -p ':'"
 
 # =========================

@@ -6,12 +6,15 @@ return {
       "rcarriga/nvim-dap-ui",
       "nvim-neotest/nvim-nio",
       "mfussenegger/nvim-dap-python",
+      "leoluz/nvim-dap-go"
     },
     config = function()
       -- DAP setup
       local dap = require("dap")
       local dapui = require("dapui")
       dapui.setup()
+
+     require("dap-go").setup()
 
       --------------------Helpers----------------------------------------------
       -- Python helpers for path resoluton
