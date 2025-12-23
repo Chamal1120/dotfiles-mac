@@ -90,11 +90,12 @@ alias la='eza -a'
 alias lla='eza -la'
 alias ll='eza -l'
 alias lt='eza -TL 2'
-alias vim='nvim'
+alias v='nvim'
 alias cat='bat'
 alias yt-dlp-fhd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp.conf'
 alias yt-dlp-hd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-720.conf'
 alias yt-dlp-audio='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-audio.conf'
+alias jrun='java --enable-preview --source 21'
 # alias myed="ed -p ':'"
 
 # =========================
