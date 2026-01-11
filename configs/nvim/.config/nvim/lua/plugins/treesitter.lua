@@ -6,7 +6,7 @@ return {
   opts = {
     ensure_installed = { "c", "lua", "vim", "vimdoc", "markdown", "markdown_inline" },
     sync_install = false,
-    auto_install = true,
+    auto_install = false,
     indent = { enable = true },
     highlight = { enable = true },
     folds = { enable = true },

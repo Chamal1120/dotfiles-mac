@@ -5,8 +5,7 @@ return {
     config = function()
         -- NOTE: you do not need to call setup if you don't want to.
         require("vague").setup({
-            -- optional configuration here
-            italic = false, -- Disable italics globally
+            italic = false,
         })
         vim.cmd("colorscheme vague")
     end,

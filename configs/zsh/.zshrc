@@ -90,7 +90,7 @@ alias la='eza -a'
 alias lla='eza -la'
 alias ll='eza -l'
 alias lt='eza -TL 2'
-alias v='nvim'
+alias vim='nvim'
 alias cat='bat'
 alias yt-dlp-fhd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp.conf'
 alias yt-dlp-hd='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-720.conf'
@@ -135,3 +135,8 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/randy/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
