@@ -98,6 +98,17 @@ alias yt-dlp-audio='yt-dlp --config-location ~/.config/yt-dlp/yt-dlp-audio.conf'
 alias jrun='java --enable-preview --source 21'
 # alias myed="ed -p ':'"
 
+# Maven aliases
+#
+# Generate a basic Java CLI application project
+alias mvn-new-cli='mvn archetype:generate -DgroupId=com.myapp -DartifactId=my-cli-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false'
+#alias mci='mvn clean install'
+#alias mcp='mvn clean package'
+#alias mc='mvn clean'
+#alias mrun='mvn exec:java -Dexec.mainClass="com.myapp.App"'
+#alias mcit='mvn clean install -DskipTests'
+#alias m-update='mvn versions:display-dependency-updates' # Upgrade deps
+
 # =========================
 # 5. Completion system
 # =========================
@@ -140,3 +151,6 @@ fpath=(/Users/randy/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+# Shopify Hydrogen alias to local projects
+alias h2='$(npm prefix -s)/node_modules/.bin/shopify hydrogen'
